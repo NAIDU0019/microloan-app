@@ -1,0 +1,57 @@
+name: microloan_app
+description: A microloan application for SHG (Self-Help Groups) with blockchain integration.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  
+  # State Management (Choose one)
+  flutter_riverpod: ^2.4.9      # OR provider: ^6.1.1
+  # flutter_bloc: ^8.1.3        # If using BLoC instead
+
+  # HTTP & API
+  dio: ^5.3.3
+  http: ^0.13.6
+
+  # Auth & Storage
+  firebase_auth: ^4.11.1
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^8.1.0
+
+  # Blockchain (Polygon)
+  web3dart: ^4.1.0
+  walletconnect_dart: ^3.0.0
+
+  # Payments
+  razorpay_flutter: ^3.0.0
+
+  # UI & Helpers
+  flutter_svg: ^2.0.7
+  intl: ^0.18.1
+  flutter_dotenv: ^5.1.0
+  url_launcher: ^6.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.6
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - .env
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
